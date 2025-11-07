@@ -34,30 +34,30 @@
 		
 		led_power: power {
 			label = "white:power";
-			gpios = <&pio 15 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 15 GPIO_ACTIVE_LOW>;
 			default-state = "on";
 		};
 		
 		wlan2g {
 			label = "white:wlan2g";
 			gpios = <&pio 11 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "phy0tpt";
+			linux,default-trigger = "phy0-ap0";
 		};
 		
 		wlan5g {
 			label = "white:wlan5g";
-			gpios = <&pio 12 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy1tpt";
+			gpios = <&pio 12 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "phy1-ap0";
 		};
 		
 		internet_white {
 			label = "white:internet";
-			gpios = <&pio 9 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 9 GPIO_ACTIVE_LOW>;
 		};
 		
 		internet_orange {
 			label = "orange:internet";
-			gpios = <&pio 19 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 19 GPIO_ACTIVE_LOW>;
 		};
 		
 		lan {
@@ -67,14 +67,14 @@
 		
 		usb {
 			label = "white:usb";
-			gpios = <&pio 10 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 10 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&ssusb>;
 			linux,default-trigger = "usbport";
 		};
 		
 		wps {
 			label = "white:wps";
-			gpios = <&pio 18 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 18 GPIO_ACTIVE_LOW>;
 		};
 	};
 	

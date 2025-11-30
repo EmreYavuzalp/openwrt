@@ -373,6 +373,15 @@ define Device/hongdian_h7920-v40
 endef
 TARGET_DEVICES += hongdian_h7920-v40
 
+define Device/hongdian_h8850-v20
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Hongdian
+  DEVICE_MODEL := H8850
+  DEVICE_VARIANT := v20
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi
+endef
+TARGET_DEVICES += hongdian_h8850-v20
+
 define Device/iptime_a3
   IMAGE_SIZE := 7936k
   UIMAGE_NAME := a3
@@ -824,6 +833,8 @@ define Device/tplink_archer-c50-v6
   IMAGE_SIZE := 7616k
   DEVICE_MODEL := Archer C50
   DEVICE_VARIANT := v6 (CA/EU/RU)
+  DEVICE_ALT0_MODEL := Archer A5
+  DEVICE_ALT0_VARIANT := v6 (CA/EU/RU)
   TPLINK_FLASHLAYOUT := 8MSUmtk
   TPLINK_HWID := 0x0C500006
   TPLINK_HWREVADD := 0x6

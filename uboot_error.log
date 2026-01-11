@@ -1,0 +1,737 @@
+WARNING: Makefile 'package/feeds/telephony/asterisk/Makefile' has a dependency on 'uw-imap', which does not exist
+WARNING: Makefile 'package/feeds/packages/onionshare-cli/Makefile' has a dependency on 'python3-pysocks', which does not exist
+WARNING: Makefile 'package/feeds/packages/onionshare-cli/Makefile' has a dependency on 'python3-unidecode', which does not exist
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/scripts/config'
+make[2]: 'conf' is up to date.
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/scripts/config'
+make[1]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt'
++ mkdir -p /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl
++ cd /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl
++ mkdir -p bin lib stamp usr/include usr/lib
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/stamp
+touch /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/.prepared
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/utils/lua'
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/utils/lua'
+time: package/utils/lua/host-compile#0.33#0.06#0.37
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/system/apk'
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/system/apk'
+time: package/system/apk/host-compile#0.28#0.06#0.32
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/libs/toolchain'
+rm -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.built
+touch /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.built_check
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libgcc_s.so.1 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/
+touch /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.built
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc.installed /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc
+echo 1.2.5-r5 > /media/emre/Linuxdepobuyuk/openwrt/tmp/libc.version; 	install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/lib /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/usr/bin
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/ld-musl-*.so* /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/lib/
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libc.so* /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/lib/
+ln -sf ../../lib/libc.so /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/usr/bin/ldd
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libatomic.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libc.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libcrypt.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libdl.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libitm.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libm.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libpthread.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libresolv.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/librt.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libssp_nonshared.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libstdc++.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libstdc++exp.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libstdc++fs.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libsupc++.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libutil.a /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libxnet.a /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/lib/
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/gcc/aarch64-openwrt-linux-musl/14.3.0/libgcc_pic.a /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/lib/libgcc_s_pic.a; cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/gcc/aarch64-openwrt-linux-musl/14.3.0/libgcc.map /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/lib/libgcc_s_pic.map 
+touch /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc.installed
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/root-mediatek/stamp
+SHELL= flock /media/emre/Linuxdepobuyuk/openwrt/tmp/.root-copy.flock -c 'cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/. /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/root-mediatek/'
+touch /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/root-mediatek/stamp/.libc_installed
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc
+/media/emre/Linuxdepobuyuk/openwrt/scripts/ipkg-remove libgcc /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages/libgcc1-14.3.0-r5.apk
+removed '/media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages/libgcc1-14.3.0-r5.apk'
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/pkginfo
+install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libgcc_s.so.* /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/
+find /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc -name 'CVS' -o -name '.svn' -o -name '.#*' -o -name '*~'| xargs -r rm -rf
+export CROSS="aarch64-openwrt-linux-musl-"  NO_RENAME=1 ; NM="aarch64-openwrt-linux-musl-nm" STRIP="/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/sstrip -z" STRIP_KMOD="/media/emre/Linuxdepobuyuk/openwrt/scripts/strip-kmod.sh" PATCHELF="/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/patchelf" /media/emre/Linuxdepobuyuk/openwrt/scripts/rstrip.sh /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc
+rstrip.sh: /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/libgcc_s.so.1: shared object
+install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/
+(cd /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc; )
+( echo "#!/bin/sh"; echo "[ \"\${IPKG_NO_SCRIPT}\" = \"1\" ] && exit 0"; echo "[ -s "\${IPKG_INSTROOT}/lib/functions.sh" ] || exit 0"; echo ". \${IPKG_INSTROOT}/lib/functions.sh"; echo 'export root="${IPKG_INSTROOT}"'; echo 'export pkgname="libgcc"'; echo "add_group_and_user"; echo "default_postinst"; [ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/postinst-pkg ] || sed -z 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/postinst-pkg"; ) > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/post-install;
+( echo "#!/bin/sh"; echo 'export PKG_UPGRADE=1'; [ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/post-install ] || sed -z 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/post-install"; ) > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/post-upgrade;
+( echo "#!/bin/sh"; echo "[ -s "\${IPKG_INSTROOT}/lib/functions.sh" ] || exit 0"; echo ". \${IPKG_INSTROOT}/lib/functions.sh"; echo 'export root="${IPKG_INSTROOT}"'; echo 'export pkgname="libgcc"'; echo "default_prerm"; [ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/prerm-pkg ] || sed -z 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/prerm-pkg"; ) > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/pre-deinstall;
+[ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/postrm ] || sed -zi 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/postrm";
+if [ -n "" ]; then echo  > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.rusers; fi;
+if [ -n "" ]; then echo  > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.alternatives; fi;
+(cd /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc && find . -type f,l -printf "/%P\n" | sort > /media/emre/Linuxdepobuyuk/openwrt/tmp/libgcc.list && mv /media/emre/Linuxdepobuyuk/openwrt/tmp/libgcc.list /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.list)
+# Move conffiles to IDIR and build conffiles_static with csums
+if [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/conffiles ]; then mv -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/conffiles /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.conffiles; for file in $(cat /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.conffiles); do [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/$file ] || continue; csum=$(/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/mkhash sha256 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/$file); echo $file $csum >> /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.conffiles_static; done; fi
+# Some package (base-files) manually append stuff to conffiles
+# Append stuff from it and delete the CONTROL directory since everything else should be migrated
+if [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/CONTROL/conffiles ]; then echo $(IDIR_libgcc)/CONTROL/conffiles >> /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.conffiles; for file in $(cat /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/CONTROL/conffiles); do [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/$file ] || continue; csum=$(/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/mkhash sha256 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/$file); echo $file $csum >> /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/lib/apk/packages/libgcc.conffiles_static; done; rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/CONTROL/conffiles; fi
+if [ -z "$(ls -A /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/CONTROL 2>/dev/null)" ]; then rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/CONTROL; else echo "CONTROL directory /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc/CONTROL is not empty! This is not right and should be checked!" >&2; exit 1; fi
+/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/fakeroot /media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/apk mkpkg --info "name:libgcc1" --info "version:14.3.0-r5" --info "tags:openwrt:abiversion=1" --info "description:GCC support library" --info "arch:aarch64_cortex-a53" --info "license:GPL-3.0-with-GCC-exception" --info "origin:feeds/base/libs/toolchain" --info "url:http://gcc.gnu.org/" --info "maintainer:Felix Fietkau <nbd@nbd.name>" --info "provides: libgcc=14.3.0-r5 "  --script "post-install:/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/post-install" --script "post-upgrade:/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/post-upgrade" --script "pre-deinstall:/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libgcc/pre-deinstall" --info "depends:" --files "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libgcc" --output "/media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages/libgcc1-14.3.0-r5.apk"
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc
+/media/emre/Linuxdepobuyuk/openwrt/scripts/ipkg-remove libc /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages/libc-1.2.5-r5.apk
+removed '/media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages/libc-1.2.5-r5.apk'
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/pkginfo
+echo 1.2.5-r5 > /media/emre/Linuxdepobuyuk/openwrt/tmp/libc.version; 	install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/usr/bin
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/ld-musl-*.so* /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libc.so* /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/
+ln -sf ../../lib/libc.so /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/usr/bin/ldd
+find /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc -name 'CVS' -o -name '.svn' -o -name '.#*' -o -name '*~'| xargs -r rm -rf
+export CROSS="aarch64-openwrt-linux-musl-"  NO_RENAME=1 ; NM="aarch64-openwrt-linux-musl-nm" STRIP="/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/sstrip -z" STRIP_KMOD="/media/emre/Linuxdepobuyuk/openwrt/scripts/strip-kmod.sh" PATCHELF="/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/patchelf" /media/emre/Linuxdepobuyuk/openwrt/scripts/rstrip.sh /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc
+rstrip.sh: /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/libc.so: shared object
+install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/
+(cd /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc; )
+( echo "#!/bin/sh"; echo "[ \"\${IPKG_NO_SCRIPT}\" = \"1\" ] && exit 0"; echo "[ -s "\${IPKG_INSTROOT}/lib/functions.sh" ] || exit 0"; echo ". \${IPKG_INSTROOT}/lib/functions.sh"; echo 'export root="${IPKG_INSTROOT}"'; echo 'export pkgname="libc"'; echo "add_group_and_user"; echo "default_postinst"; [ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/postinst-pkg ] || sed -z 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/postinst-pkg"; ) > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/post-install;
+( echo "#!/bin/sh"; echo 'export PKG_UPGRADE=1'; [ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/post-install ] || sed -z 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/post-install"; ) > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/post-upgrade;
+( echo "#!/bin/sh"; echo "[ -s "\${IPKG_INSTROOT}/lib/functions.sh" ] || exit 0"; echo ". \${IPKG_INSTROOT}/lib/functions.sh"; echo 'export root="${IPKG_INSTROOT}"'; echo 'export pkgname="libc"'; echo "default_prerm"; [ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/prerm-pkg ] || sed -z 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/prerm-pkg"; ) > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/pre-deinstall;
+[ ! -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/postrm ] || sed -zi 's/^\s*#!/#!/' "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/postrm";
+if [ -n "" ]; then echo  > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.rusers; fi;
+if [ -n "" ]; then echo  > /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.alternatives; fi;
+(cd /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc && find . -type f,l -printf "/%P\n" | sort > /media/emre/Linuxdepobuyuk/openwrt/tmp/libc.list && mv /media/emre/Linuxdepobuyuk/openwrt/tmp/libc.list /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.list)
+# Move conffiles to IDIR and build conffiles_static with csums
+if [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/conffiles ]; then mv -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/conffiles /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.conffiles; for file in $(cat /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.conffiles); do [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/$file ] || continue; csum=$(/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/mkhash sha256 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/$file); echo $file $csum >> /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.conffiles_static; done; fi
+# Some package (base-files) manually append stuff to conffiles
+# Append stuff from it and delete the CONTROL directory since everything else should be migrated
+if [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/CONTROL/conffiles ]; then echo $(IDIR_libc)/CONTROL/conffiles >> /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.conffiles; for file in $(cat /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/CONTROL/conffiles); do [ -f /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/$file ] || continue; csum=$(/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/mkhash sha256 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/$file); echo $file $csum >> /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/lib/apk/packages/libc.conffiles_static; done; rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/CONTROL/conffiles; fi
+if [ -z "$(ls -A /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/CONTROL 2>/dev/null)" ]; then rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/CONTROL; else echo "CONTROL directory /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc/CONTROL is not empty! This is not right and should be checked!" >&2; exit 1; fi
+/media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/fakeroot /media/emre/Linuxdepobuyuk/openwrt/staging_dir/host/bin/apk mkpkg --info "name:libc" --info "version:1.2.5-r5"  --info "description:C library" --info "arch:aarch64_cortex-a53" --info "license:GPL-3.0-with-GCC-exception" --info "origin:feeds/base/libs/toolchain" --info "url:http://www.musl-libc.org/" --info "maintainer:Felix Fietkau <nbd@nbd.name>" --info "provides:"  --script "post-install:/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/post-install" --script "post-upgrade:/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/post-upgrade" --script "pre-deinstall:/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/apk-aarch64_cortex-a53/libc/pre-deinstall" --info "depends:libgcc1" --files "/media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/ipkg-aarch64_cortex-a53/libc" --output "/media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/packages/libc-1.2.5-r5.apk"
+echo "libc" >> /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc.installed /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc
+install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc/lib
+cp -fpR /media/emre/Linuxdepobuyuk/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/lib/libgcc_s.so.* /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc/lib/
+touch /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc.installed
+mkdir -p /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/root-mediatek/stamp
+echo '1' | cmp -s - /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libgcc.version || { echo '1' > /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libgcc.version;  } 
+SHELL= flock /media/emre/Linuxdepobuyuk/openwrt/tmp/.root-copy.flock -c 'cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc/. /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/root-mediatek/'
+touch /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/root-mediatek/stamp/.libgcc_installed
+echo "libgcc" >> /media/emre/Linuxdepobuyuk/openwrt/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/libs/toolchain'
+time: package/libs/toolchain/compile#0.50#0.24#0.97
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7981-ram-ddr3
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7981-ram-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7981-ram-ddr3 >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7981-ram-ddr3] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7981-ram-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7981-ram-ddr3 ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7981-ram-ddr3 && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7981-ram-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7981-ram-ddr3/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7981-ram-ddr3/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7981-ram-ddr3/compile#0.31#0.08#0.39
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7981-ram-ddr4
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7981-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7981-ram-ddr4 >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7981-ram-ddr4] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7981-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7981-ram-ddr4 ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7981-ram-ddr4 && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7981-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7981-ram-ddr4/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7981-ram-ddr4/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7981-ram-ddr4/compile#0.40#0.25#1.47
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-ram-ddr3
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-ram-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-ram-ddr3 >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7986-ram-ddr3] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-ram-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-ram-ddr3 ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-ram-ddr3 && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-ram-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-ram-ddr3/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-ram-ddr3/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7986-ram-ddr3/compile#0.31#0.09#0.36
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-spim-nand-ubi-ddr3
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-spim-nand-ubi-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-spim-nand-ubi-ddr3 >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7986-spim-nand-ubi-ddr3] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-spim-nand-ubi-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-spim-nand-ubi-ddr3 ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-spim-nand-ubi-ddr3 && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-spim-nand-ubi-ddr3/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-spim-nand-ubi-ddr3/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-spim-nand-ubi-ddr3/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7986-spim-nand-ubi-ddr3/compile#0.29#0.06#0.31
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-ram-ddr4
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-ram-ddr4 >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7986-ram-ddr4] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-ram-ddr4 ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-ram-ddr4 && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7986-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7986-ram-ddr4/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7986-ram-ddr4/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7986-ram-ddr4/compile#0.27#0.07#0.31
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7987-ram-comb
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7987-ram-comb/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7987-ram-comb >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7987-ram-comb] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7987-ram-comb/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7987-ram-comb ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7987-ram-comb && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7987-ram-comb/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7987-ram-comb/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7987-ram-comb/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7987-ram-comb/compile#0.27#0.07#0.31
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7988-ram-comb
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7988-ram-comb/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7988-ram-comb >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7988-ram-comb] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7988-ram-comb/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7988-ram-comb ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7988-ram-comb && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7988-ram-comb/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7988-ram-comb/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7988-ram-comb/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7988-ram-comb/compile#0.28#0.07#0.31
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+rm -rf /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7988-ram-ddr4
+rmdir /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7988-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7988-ram-ddr4 >/dev/null 2>/dev/null
+make[2]: [Makefile:753: install-bin-trusted-firmware-a-mt7988-ram-ddr4] Error 1 (ignored)
+if [ -d /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7988-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7988-ram-ddr4 ]; then install -d -m0755 /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7988-ram-ddr4 && cp -fpR /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/arm-trusted-firmware-mediatek-mt7988-ram-ddr4/arm-trusted-firmware-mediatek-2025.07.11~78a0dfd9/.pkgdir/trusted-firmware-a-mt7988-ram-ddr4/. /media/emre/Linuxdepobuyuk/openwrt/bin/targets/mediatek/filogic/trusted-firmware-a-mt7988-ram-ddr4/; fi
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-mediatek'
+time: package/boot/arm-trusted-firmware-mediatek/mt7988-ram-ddr4/compile#0.27#0.08#0.31
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-tools'
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/arm-trusted-firmware-tools'
+time: package/boot/arm-trusted-firmware-tools/host-compile#0.20#0.08#0.25
+make[2]: Entering directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek'
+touch /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7986_tplink_archer-ax80-v1-eu-ubi/u-boot-2025.10/.prepared_83c042cad315c6330ae5f35bb517ee21_6664517399ebbbc92a37c5bb081b5c53_check
+. /media/emre/Linuxdepobuyuk/openwrt/include/shell.sh; bzcat /media/emre/Linuxdepobuyuk/openwrt/dl/u-boot-2025.10.tar.bz2 | tar -C /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7986_tplink_archer-ax80-v1-eu-ubi/u-boot-2025.10/.. -xf -
+[ ! -d ./src/ ] || cp -fpR ./src/. /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7986_tplink_archer-ax80-v1-eu-ubi/u-boot-2025.10
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/007-ARM-dts-build-DT-for-MT7987-RFB.patch using plaintext: 
+patching file arch/arm/dts/Makefile
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-01-drivers-mtd-add-support-for-MediaTek-SPI-NAND-flash-.patch using plaintext: 
+patching file drivers/mtd/Kconfig
+patching file drivers/mtd/Makefile
+patching file drivers/mtd/mtk-snand/Kconfig
+patching file drivers/mtd/mtk-snand/Makefile
+patching file drivers/mtd/mtk-snand/mtk-snand-def.h
+patching file drivers/mtd/mtk-snand/mtk-snand-ecc.c
+patching file drivers/mtd/mtk-snand/mtk-snand-ids.c
+patching file drivers/mtd/mtk-snand/mtk-snand-mtd.c
+patching file drivers/mtd/mtk-snand/mtk-snand-os.c
+patching file drivers/mtd/mtk-snand/mtk-snand-os.h
+patching file drivers/mtd/mtk-snand/mtk-snand.c
+patching file drivers/mtd/mtk-snand/mtk-snand.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-02-mtd-mtk-snand-add-support-for-SPL.patch using plaintext: 
+patching file drivers/mtd/mtk-snand/Kconfig
+patching file drivers/mtd/mtk-snand/Makefile
+patching file drivers/mtd/mtk-snand/mtk-snand-spl.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-03-mtd-add-a-new-mtd-device-type-for-NMBM.patch using plaintext: 
+patching file cmd/mtdparts.c
+patching file include/jffs2/load_kernel.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-04-mtd-add-core-facility-code-of-NMBM.patch using plaintext: 
+patching file drivers/mtd/Kconfig
+patching file drivers/mtd/Makefile
+patching file drivers/mtd/nmbm/Kconfig
+patching file drivers/mtd/nmbm/Makefile
+patching file drivers/mtd/nmbm/nmbm-core.c
+patching file drivers/mtd/nmbm/nmbm-debug.h
+patching file drivers/mtd/nmbm/nmbm-debug.inl
+patching file drivers/mtd/nmbm/nmbm-private.h
+patching file include/nmbm/nmbm-os.h
+patching file include/nmbm/nmbm.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-05-mtd-nmbm-add-support-for-mtd.patch using plaintext: 
+patching file drivers/mtd/nmbm/Kconfig
+patching file drivers/mtd/nmbm/Makefile
+patching file drivers/mtd/nmbm/nmbm-mtd.c
+patching file include/nmbm/nmbm-mtd.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-06-common-board_r-add-support-to-initialize-NMBM-after-.patch using plaintext: 
+patching file common/board_r.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-07-cmd-add-nmbm-command.patch using plaintext: 
+patching file cmd/Kconfig
+patching file cmd/Makefile
+patching file cmd/nmbm.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-08-cmd-mtd-add-markbad-subcommand-for-NMBM-testing.patch using plaintext: 
+patching file cmd/mtd.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-09-mtd-mtk-snand-add-NMBM-support-for-SPL.patch using plaintext: 
+patching file drivers/mtd/mtk-snand/Makefile
+patching file drivers/mtd/mtk-snand/mtk-snand-spl.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-10-cmd-add-a-new-command-for-NAND-flash-debugging.patch using plaintext: 
+patching file cmd/Kconfig
+patching file cmd/Makefile
+patching file cmd/nand-ext.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-11-env-add-support-for-NMBM-upper-MTD-layer.patch using plaintext: 
+patching file env/Kconfig
+patching file env/Makefile
+patching file env/env.c
+patching file env/nmbm.c
+patching file include/env_internal.h
+patching file tools/Makefile
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-12-mtd-spi-nor-add-support-to-read-flash-unique-ID.patch using plaintext: 
+patching file drivers/mtd/spi/spi-nor-core.c
+patching file include/linux/mtd/spi-nor.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-13-cmd-sf-add-support-to-read-flash-unique-ID.patch using plaintext: 
+patching file cmd/sf.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-14-common-spl-spl_nand-enable-CONFIG_SYS_NAND_U_BOOT_OF.patch using plaintext: 
+patching file common/spl/spl_nand.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-16-board-mt7622-use-new-spi-nand-driver.patch using plaintext: 
+patching file arch/arm/dts/mt7622-rfb.dts
+patching file arch/arm/dts/mt7622.dtsi
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-17-board-mt7981-add-reference-board-using-new-spi-nand-.patch using plaintext: 
+patching file arch/arm/dts/Makefile
+patching file arch/arm/dts/mt7981-snfi-nand-rfb.dts
+patching file configs/mt7981_snfi_nand_rfb_defconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-18-mtd-spi-nor-add-more-flash-ids.patch using plaintext: 
+patching file drivers/mtd/spi/spi-nor-core.c
+patching file drivers/mtd/spi/spi-nor-ids.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-19-mtd-spi-nand-add-more-spi-nand-chips.patch using plaintext: 
+patching file drivers/mtd/nand/spi/Makefile
+patching file drivers/mtd/nand/spi/core.c
+patching file drivers/mtd/nand/spi/etron.c
+patching file drivers/mtd/nand/spi/gigadevice.c
+patching file drivers/mtd/nand/spi/winbond.c
+patching file include/linux/mtd/spinand.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-20-mtd-spi-nand-add-support-for-FudanMicro-chips.patch using plaintext: 
+patching file drivers/mtd/nand/spi/Makefile
+patching file drivers/mtd/nand/spi/core.c
+patching file drivers/mtd/nand/spi/fudanmicro.c
+patching file include/linux/mtd/spinand.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-21-mtd-spi-nand-add-CASN-page-support.patch using plaintext: 
+patching file drivers/mtd/nand/spi/core.c
+patching file include/linux/mtd/casn.h
+patching file include/linux/mtd/spinand.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-22-mmc-mtk-sd-add-support-to-display-verbose-error-log.patch using plaintext: 
+patching file drivers/mmc/Kconfig
+patching file drivers/mmc/Makefile
+patching file drivers/mmc/mtk-sd.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-23-cmd-ubi-make-volume-find-create-remove-APIs-public.patch using plaintext: 
+patching file cmd/ubi.c
+patching file include/ubi_uboot.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-24-cmd-ubi-allow-creating-volume-with-all-free-spaces.patch using plaintext: 
+patching file cmd/ubi.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-25-env-ubi-add-support-to-create-environment-volume-if-.patch using plaintext: 
+patching file env/Kconfig
+patching file env/ubi.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/100-26-mtd-ubi-add-support-for-UBI-end-of-filesystem-marker.patch using plaintext: 
+patching file drivers/mtd/ubi/attach.c
+patching file drivers/mtd/ubi/ubi.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/101-01-mtd-spinand-add-support-for-FORESEE-F35SQA002G.patch using plaintext: 
+patching file drivers/mtd/nand/spi/Makefile
+patching file drivers/mtd/nand/spi/core.c
+patching file drivers/mtd/nand/spi/foresee.c
+patching file include/linux/mtd/spinand.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/101-02-mtd-spinand-add-support-for-FORESEE-F35SQA001G.patch using plaintext: 
+patching file drivers/mtd/nand/spi/foresee.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/101-03-mtd-spinand-fix-support-for-FORESEE.patch using plaintext: 
+patching file drivers/mtd/nand/spi/foresee.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/102-mtd-spinand-esmt-add-support-for-F50L1G41LC.patch using plaintext: 
+patching file drivers/mtd/nand/spi/core.c
+patching file drivers/mtd/nand/spi/esmt.c
+patching file include/linux/mtd/spinand.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/103-01-mt7622-enable-pstore.patch using plaintext: 
+patching file arch/arm/dts/mt7622.dtsi
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/103-02-mt7981-enable-pstore.patch using plaintext: 
+patching file arch/arm/dts/mt7981.dtsi
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/103-03-mt7986-enable-pstore.patch using plaintext: 
+patching file arch/arm/dts/mt7986.dtsi
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/103-04-mt7988-enable-pstore.patch using plaintext: 
+patching file arch/arm/dts/mt7988.dtsi
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/104-snfi-add-support-for-GD5F1GQ5UE.patch using plaintext: 
+patching file drivers/mtd/mtk-snand/mtk-snand-ids.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/105-configs-add-usefull-stuff-to-mt7988-rfb.patch using plaintext: 
+patching file configs/mt7988_sd_rfb_defconfig
+patching file configs/mt7988_rfb_defconfig
+patching file arch/arm/dts/mt7988-rfb.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/106-configs-sync-mt7981-rfb-storage.patch using plaintext: 
+patching file configs/mt7981_rfb_defconfig
+patching file configs/mt7981_snfi_nand_rfb_defconfig
+patching file configs/mt7981_nor_rfb_defconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/107-configs-add-useful-options-to-mt7981-rfb.patch using plaintext: 
+patching file configs/mt7981_emmc_rfb_defconfig
+patching file configs/mt7981_rfb_defconfig
+patching file configs/mt7981_sd_rfb_defconfig
+patching file configs/mt7981_snfi_nand_rfb_defconfig
+patching file configs/mt7981_nor_rfb_defconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/108-dts-arm64-mt7981-rfb-add-mtd-partitions.patch using plaintext: 
+patching file arch/arm/dts/mt7981-rfb.dts
+patching file arch/arm/dts/mt7981-snfi-nand-rfb.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/109-snfi-FM35Q1GA-is-x4-only.patch using plaintext: 
+patching file drivers/mtd/mtk-snand/mtk-snand-ids.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/110-mtd-spi-nand-add-support-for-FudanMicro-FM25S01A.patch using plaintext: 
+patching file drivers/mtd/nand/spi/fudanmicro.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/120-use-xz-instead-of-lzma.patch using plaintext: 
+patching file Makefile
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/129-board-mediatek-wire-up-NMBM-support.patch using plaintext: 
+patching file board/mediatek/mt7622/mt7622_rfb.c
+patching file board/mediatek/mt7629/mt7629_rfb.c
+patching file board/mediatek/mt7981/mt7981_rfb.c
+patching file board/mediatek/mt7986/mt7986_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/160-net-phy-add-support-for-Airoha-ethernet-PHY-driver.patch using plaintext: 
+patching file drivers/net/phy/Kconfig
+patching file drivers/net/phy/Makefile
+patching file drivers/net/phy/air_en8801s.c
+patching file drivers/net/phy/air_en8801s.h
+patching file drivers/net/phy/air_en8811h.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/200-cmd-add-imsz-and-imszb.patch using plaintext: 
+patching file cmd/bootm.c
+patching file boot/image-fit.c
+patching file include/image.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/211-cmd-bootmenu-custom-title.patch using plaintext: 
+patching file cmd/bootmenu.c
+patching file include/menu.h
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/220-cmd-env-readmem.patch using plaintext: 
+patching file cmd/Kconfig
+patching file cmd/nvedit.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/230-cmd-add-pstore-check.patch using plaintext: 
+patching file cmd/pstore.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/250-fix-mmc-erase-timeout.patch using plaintext: 
+patching file drivers/mmc/mmc_write.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/280-image-fdt-save-name-of-FIT-configuration-in-chosen-node.patch using plaintext: 
+patching file boot/image-fdt.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/300-mt7623-fix-mmc-get-env-dev.patch using plaintext: 
+patching file board/mediatek/mt7623/mt7623_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/301-mt7622-generic-reset-button-ignore-env.patch using plaintext: 
+patching file board/mediatek/mt7622/mt7622_rfb.c
+patching file arch/arm/mach-mediatek/Kconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/302-mt7623-generic-reset-button-ignore-env.patch using plaintext: 
+patching file board/mediatek/mt7623/mt7623_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/303-mt7986-generic-reset-button-ignore-env.patch using plaintext: 
+patching file board/mediatek/mt7986/mt7986_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/304-mt7981-generic-reset-button-ignore-env.patch using plaintext: 
+patching file board/mediatek/mt7981/mt7981_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/305-mt7988-generic-reset-button-ignore-env.patch using plaintext: 
+patching file board/mediatek/mt7988/mt7988_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/306-mt7987-generic-reset-button-ignore-env.patch using plaintext: 
+patching file board/mediatek/mt7987/mt7987_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/310-mt7988-select-rootdisk.patch using plaintext: 
+patching file board/mediatek/mt7988/mt7988_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/311-mt7986-select-rootdisk.patch using plaintext: 
+patching file board/mediatek/mt7986/mt7986_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/312-mt7622-select-rootdisk.patch using plaintext: 
+patching file board/mediatek/mt7622/mt7622_rfb.c
+patching file configs/mt7622_rfb_defconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/313-mt7623-select-rootdisk.patch using plaintext: 
+patching file board/mediatek/mt7623/mt7623_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/314-mt7981-select-rootdisk.patch using plaintext: 
+patching file board/mediatek/mt7981/mt7981_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/315-mt7987-select-rootdisk.patch using plaintext: 
+patching file board/mediatek/mt7987/mt7987_rfb.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/400-update-bpir2-defconfig.patch using plaintext: 
+patching file configs/mt7623n_bpir2_defconfig
+patching file defenvs/bananapi_bpi-r2_env
+patching file arch/arm/dts/mt7623n-bananapi-bpi-r2.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/401-update-u7623-defconfig.patch using plaintext: 
+patching file configs/mt7623a_unielec_u7623_02_defconfig
+patching file defenvs/unielec_u7623-02_env
+patching file arch/arm/dts/mt7623a-unielec-u7623-02-emmc.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/402-update-bananapi-bpi-r64-device-tree.patch using plaintext: 
+patching file arch/arm/dts/mt7622-bananapi-bpi-r64.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/403-add-bananapi_bpi-r64-snand.patch using plaintext: 
+patching file arch/arm/dts/mt7622-bananapi-bpi-r64.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/404-add-bananapi_bpi-r64_defconfigs.patch using plaintext: 
+patching file configs/mt7622_bananapi_bpi-r64-sdmmc_defconfig
+patching file defenvs/bananapi_bpi-r64-sdmmc_env
+patching file configs/mt7622_bananapi_bpi-r64-emmc_defconfig
+patching file defenvs/bananapi_bpi-r64-emmc_env
+patching file configs/mt7622_bananapi_bpi-r64-snand_defconfig
+patching file defenvs/bananapi_bpi-r64-snand_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/405-dts-mt7623n-bpi-r2-fix-leds.patch using plaintext: 
+patching file arch/arm/dts/mt7623n-bananapi-bpi-r2.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/406-dts-mt7623n-bpi-r2-uart0-force-highspeed.patch using plaintext: 
+patching file arch/arm/dts/mt7623n-bananapi-bpi-r2.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/408-arm-mediatek-add-back-mt7622-LK-image-header.patch using plaintext: 
+patching file arch/arm/mach-mediatek/Kconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/410-add-linksys-e8450.patch using plaintext: 
+patching file configs/mt7622_linksys_e8450_defconfig
+patching file arch/arm/dts/mt7622-linksys-e8450-ubi.dts
+patching file arch/arm/dts/Makefile
+patching file defenvs/linksys_e8450_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/412-add-ubnt-unifi-6-lr.patch using plaintext: 
+patching file configs/mt7622_ubnt_unifi-6-lr-v1_defconfig
+patching file configs/mt7622_ubnt_unifi-6-lr-v2_defconfig
+patching file configs/mt7622_ubnt_unifi-6-lr-v3_defconfig
+patching file arch/arm/dts/mt7622-ubnt-unifi-6-lr.dts
+patching file arch/arm/dts/mt7622-ubnt-unifi-6-lr-v3.dts
+patching file arch/arm/dts/Makefile
+patching file defenvs/ubnt_unifi-6-lr_env
+patching file defenvs/ubnt_unifi-6-lr-v2_env
+patching file defenvs/ubnt_unifi-6-lr-v3_env
+patching file common/board_r.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/420-add-support-for-RAVPower-RP-WD009.patch using plaintext: 
+patching file arch/mips/dts/Makefile
+patching file arch/mips/dts/ravpower-rp-wd009.dts
+patching file board/ravpower/rp-wd009/Kconfig
+patching file board/ravpower/rp-wd009/Makefile
+patching file board/ravpower/rp-wd009/board.c
+patching file configs/ravpower-rp-wd009-ram_defconfig
+patching file include/configs/ravpower-rp-wd009.h
+patching file arch/mips/mach-mtmips/mt7628/Kconfig
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/421-zbtlink_zbt-wg3526-16m.patch using plaintext: 
+patching file configs/mt7621_zbtlink_zbt-wg3526-16m_defconfig
+patching file defenvs/zbtlink_zbt-wg3526-16m_env
+patching file arch/mips/dts/zbtlink,zbt-wg3526.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/429-add-netcore-n60.patch using plaintext: 
+patching file configs/mt7986_netcore_n60_defconfig
+patching file arch/arm/dts/mt7986a-netcore-n60.dts
+patching file defenvs/netcore_n60_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/430-add-bpi-r3.patch using plaintext: 
+patching file configs/mt7986a_bpi-r3-emmc_defconfig
+patching file configs/mt7986a_bpi-r3-nor_defconfig
+patching file configs/mt7986a_bpi-r3-sd_defconfig
+patching file configs/mt7986a_bpi-r3-snand_defconfig
+patching file defenvs/bananapi_bpi-r3_sdmmc_env
+patching file defenvs/bananapi_bpi-r3_nor_env
+patching file defenvs/bananapi_bpi-r3_snand_env
+patching file defenvs/bananapi_bpi-r3_emmc_env
+patching file arch/arm/dts/mt7986a-bpi-r3-sd.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/431-add-xiaomi_redmi-ax6000.patch using plaintext: 
+patching file configs/mt7986_xiaomi_redmi-ax6000_defconfig
+patching file arch/arm/dts/mt7986a-xiaomi_redmi-ax6000.dts
+patching file defenvs/xiaomi_redmi-ax6000_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/432-add-tplink-xdr608x.patch using plaintext: 
+patching file configs/mt7986_tplink_tl-xdr4288_defconfig
+patching file configs/mt7986_tplink_tl-xdr6086_defconfig
+patching file configs/mt7986_tplink_tl-xdr6088_defconfig
+patching file arch/arm/dts/mt7986a-tplink-tl-xdr608x.dts
+patching file defenvs/tplink_tl-xdr4288_env
+patching file defenvs/tplink_tl-xdr6086_env
+patching file defenvs/tplink_tl-xdr6088_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/433-add-qihoo_360t7.patch using plaintext: 
+patching file configs/mt7981_qihoo-360t7_defconfig
+patching file arch/arm/dts/mt7981_qihoo-360t7.dts
+patching file defenvs/qihoo-360t7_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/434-add-xiaomi_mi-router-wr30u.patch using plaintext: 
+patching file configs/mt7981_xiaomi_mi-router-wr30u_defconfig
+patching file arch/arm/dts/mt7981_xiaomi_mi-router-wr30u.dts
+patching file defenvs/xiaomi_mi-router-wr30u_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/435-add-h3c_magic-nx30-pro.patch using plaintext: 
+patching file configs/mt7981_h3c_magic-nx30-pro_defconfig
+patching file arch/arm/dts/mt7981_h3c_magic-nx30-pro.dts
+patching file defenvs/h3c_magic-nx30-pro_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/436-add-glinet-mt6000.patch using plaintext: 
+patching file arch/arm/dts/mt7986a-glinet-gl-mt6000.dts
+patching file configs/mt7986a_glinet_gl-mt6000_defconfig
+patching file defenvs/glinet_gl-mt6000_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/437-add-cmcc_rax3000m.patch using plaintext: 
+patching file configs/mt7981_cmcc_rax3000m-emmc_defconfig
+patching file configs/mt7981_cmcc_rax3000m-nand_defconfig
+patching file arch/arm/dts/mt7981-cmcc-rax3000m.dtsi
+patching file arch/arm/dts/mt7981-cmcc-rax3000m-emmc.dts
+patching file arch/arm/dts/mt7981-cmcc-rax3000m-nand.dts
+patching file defenvs/cmcc_rax3000m-emmc_env
+patching file defenvs/cmcc_rax3000m-nand_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/438-add-jcg_q30-pro.patch using plaintext: 
+patching file configs/mt7981_jcg_q30-pro_defconfig
+patching file arch/arm/dts/mt7981_jcg_q30-pro.dts
+patching file defenvs/jcg_q30-pro_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/439-add-zyxel_ex5601-t0.patch using plaintext: 
+patching file configs/mt7986_zyxel_ex5601-t0_defconfig
+patching file arch/arm/dts/mt7986a-zyxel_ex5601-t0.dts
+patching file defenvs/zyxel_ex5601-t0_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/440-add-xiaomi_mi-router-ax3000t.patch using plaintext: 
+patching file configs/mt7981_xiaomi_mi-router-ax3000t_defconfig
+patching file arch/arm/dts/mt7981_xiaomi_mi-router-ax3000t.dts
+patching file defenvs/xiaomi_mi-router-ax3000t_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/441-add-jdcloud_re-cp-03.patch using plaintext: 
+patching file configs/mt7986a_jdcloud_re-cp-03_defconfig
+patching file arch/arm/dts/mt7986a-jdcloud_re-cp-03.dts
+patching file defenvs/jdcloud_re-cp-03_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/442-add-bpi-r3-mini.patch using plaintext: 
+patching file configs/mt7986a_bpi-r3-mini-emmc_defconfig
+patching file configs/mt7986a_bpi-r3-mini-snand_defconfig
+patching file defenvs/bananapi_bpi-r3-mini_snand_env
+patching file defenvs/bananapi_bpi-r3-mini_emmc_env
+patching file arch/arm/dts/mt7986a-bpi-r3-mini.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/443-add-nokia_ea0326gmp.patch using plaintext: 
+patching file configs/mt7981_nokia_ea0326gmp_defconfig
+patching file arch/arm/dts/mt7981-nokia-ea0326gmp.dts
+patching file defenvs/nokia_ea0326gmp_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/444-add-abt_asr3000.patch using plaintext: 
+patching file configs/mt7981_abt_asr3000_defconfig
+patching file arch/arm/dts/mt7981-abt-asr3000.dts
+patching file defenvs/abt_asr3000_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/445-add-cudy_tr3000-v1.patch using plaintext: 
+patching file configs/mt7981_cudy_tr3000-v1_defconfig
+patching file arch/arm/dts/mt7981-cudy-tr3000-v1.dts
+patching file defenvs/cudy_tr3000-v1_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/445-add-netis-nx31.patch using plaintext: 
+patching file configs/mt7981_netis_nx31_defconfig
+patching file arch/arm/dts/mt7981-netis_nx31.dts
+patching file defenvs/netis_nx31_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/446-add-cmcc_a10.patch using plaintext: 
+patching file configs/mt7981_cmcc_a10_defconfig
+patching file arch/arm/dts/mt7981-cmcc-a10.dts
+patching file defenvs/cmcc_a10_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/447-add-konka_komi-a31.patch using plaintext: 
+patching file configs/mt7981_konka_komi-a31_defconfig
+patching file arch/arm/dts/mt7981-konka-komi-a31.dts
+patching file defenvs/konka_komi-a31_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/448-add-comfast_cf-wr632ax.patch using plaintext: 
+patching file arch/arm/dts/mt7981-comfast-cf-wr632ax.dts
+patching file configs/mt7981_comfast_cf-wr632ax_defconfig
+patching file defenvs/comfast_cf-wr632ax_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/450-add-bpi-r4.patch using plaintext: 
+patching file configs/mt7988a_bananapi_bpi-r4-emmc_defconfig
+patching file configs/mt7988a_bananapi_bpi-r4-sdmmc_defconfig
+patching file configs/mt7988a_bananapi_bpi-r4-snand_defconfig
+patching file defenvs/bananapi_bpi-r4_sdmmc_env
+patching file defenvs/bananapi_bpi-r4_snand_env
+patching file defenvs/bananapi_bpi-r4_emmc_env
+patching file arch/arm/dts/mt7988a-bananapi-bpi-r4.dtsi
+patching file arch/arm/dts/mt7988a-bananapi-bpi-r4-sd.dts
+patching file arch/arm/dts/mt7988a-bananapi-bpi-r4-emmc.dts
+patching file configs/mt7988a_bananapi_bpi-r4-poe-emmc_defconfig
+patching file configs/mt7988a_bananapi_bpi-r4-poe-sdmmc_defconfig
+patching file configs/mt7988a_bananapi_bpi-r4-poe-snand_defconfig
+patching file defenvs/bananapi_bpi-r4-poe_emmc_env
+patching file defenvs/bananapi_bpi-r4-poe_sdmmc_env
+patching file defenvs/bananapi_bpi-r4-poe_snand_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/451-add-tplink-xtr8488.patch using plaintext: 
+patching file configs/mt7986_tplink_tl-xtr8488_defconfig
+patching file arch/arm/dts/mt7986a-tplink-tl-xtr8488.dts
+patching file defenvs/tplink_tl-xtr8488_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/452-add-xiaomi-redmi-ax6s.patch using plaintext: 
+patching file arch/arm/dts/Makefile
+patching file arch/arm/dts/mt7622-xiaomi-redmi-router-ax6s.dts
+patching file configs/mt7622_xiaomi_redmi-router-ax6s-ubi-loader_defconfig
+patching file defenvs/xiaomi-redmi-router-ax6s-ubi-loader_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/453-add-openwrt-one.patch using plaintext: 
+patching file arch/arm/dts/openwrt-one.dts
+patching file configs/mt7981_openwrt-one-nor_defconfig
+patching file configs/mt7981_openwrt-one-spi-nand_defconfig
+patching file defenvs/openwrt-one-nor_env
+patching file defenvs/openwrt-one-spi-nand_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/454-add-glinet-x3000.patch using plaintext: 
+patching file arch/arm/dts/mt7981-glinet-gl-x3000.dts
+patching file configs/mt7981_glinet_gl-x3000_defconfig
+patching file defenvs/glinet_gl-x3000_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/456-add-arcadyan-mozart.patch using plaintext: 
+patching file configs/mt7988a_arcadyan_mozart_defconfig
+patching file defenvs/arcadyan_mozart_env
+patching file arch/arm/dts/mt7988a-arcadyan-mozart.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/457-initialized-the-watchdog-subsystem-later.patch using plaintext: 
+patching file common/board_r.c
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/458-add-GatoNetworks-GDSP.patch using plaintext: 
+patching file arch/arm/dts/mt7981-gatonetworks_gdsp.dts
+patching file configs/mt7981_gatonetworks_gdsp_defconfig
+patching file defenvs/gatonetworks_gdsp_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/459-add-mercusys-mr90x-v1.patch using plaintext: 
+patching file configs/mt7986_mercusys_mr90x-v1_defconfig
+patching file arch/arm/dts/mt7986b-mercusys_mr90x-v1.dts
+patching file defenvs/mercusys_mr90x-v1_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/460-add-routerich-ax3000.patch using plaintext: 
+patching file configs/mt7981_routerich_ax3000_defconfig
+patching file arch/arm/dts/mt7981-routerich_ax3000.dts
+patching file defenvs/routerich_ax3000_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/461-add-asus-zenwifi-bt8.patch using plaintext: 
+patching file configs/mt7988a_asus_zenwifi-bt8_defconfig
+patching file defenvs/asus_zenwifi-bt8_env
+patching file arch/arm/dts/mt7988a-asus-zenwifi-bt8.dts
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/461-add-netis-nx30v2.patch using plaintext: 
+patching file arch/arm/dts/mt7981-netis-nx30v2.dts
+patching file configs/mt7981_netis_nx30v2_defconfig
+patching file defenvs/netis_nx30v2.env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/462-add-netcore-n60-pro.patch using plaintext: 
+patching file configs/mt7986_netcore_n60-pro_defconfig
+patching file arch/arm/dts/mt7986a-netcore-n60-pro.dts
+patching file defenvs/netcore_n60-pro_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/463-add-snr-snr-cpe-ax2.patch using plaintext: 
+patching file configs/mt7981_snr_snr-cpe-ax2_defconfig
+patching file arch/arm/dts/mt7981-snr_snr-cpe-ax2.dts
+patching file defenvs/snr_snr-cpe-ax2_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/464-add-GL.iNet-GL-MT2500-Brume2.patch using plaintext: 
+patching file arch/arm/dts/mt7981-glinet-gl-mt2500.dts
+patching file configs/mt7981_glinet_gl-mt2500_defconfig
+patching file defenvs/glinet_gl-mt2500_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/465-add-acer_predator-w6x.patch using plaintext: 
+patching file arch/arm/dts/mt7986a-acer_predator-w6x.dts
+patching file configs/mt7986_acer_predator-w6x_defconfig
+patching file defenvs/acer_predator-w6x_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/466-add-imou-hx21.patch using plaintext: 
+patching file configs/mt7981_imou_hx21_defconfig
+patching file arch/arm/dts/mt7981-imou-hx21.dts
+patching file defenvs/imou_hx21_env
+
+Applying /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/466-add-tplink-archer-ax80-v1-eu-ubi.patch using plaintext: 
+patching file configs/mt7986_tplink_archer-ax80-v1-eu-ubi_defconfig
+patch: **** malformed patch at line 116: --- /dev/null
+
+Patch failed!  Please fix /media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek/patches/466-add-tplink-archer-ax80-v1-eu-ubi.patch!
+make[2]: *** [Makefile:1231: /media/emre/Linuxdepobuyuk/openwrt/build_dir/target-aarch64_cortex-a53_musl/u-boot-mt7986_tplink_archer-ax80-v1-eu-ubi/u-boot-2025.10/.prepared_83c042cad315c6330ae5f35bb517ee21_6664517399ebbbc92a37c5bb081b5c53] Error 1
+make[2]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt/package/boot/uboot-mediatek'
+time: package/boot/uboot-mediatek/mt7986_tplink_archer-ax80-v1-eu-ubi/compile#6.00#1.03#5.98
+    ERROR: package/boot/uboot-mediatek failed to build (build variant: mt7986_tplink_archer-ax80-v1-eu-ubi).
+make[1]: *** [package/Makefile:187: package/boot/uboot-mediatek/compile] Error 1
+make[1]: Leaving directory '/media/emre/Linuxdepobuyuk/openwrt'
+make: *** [/media/emre/Linuxdepobuyuk/openwrt/include/toplevel.mk:233: package/boot/uboot-mediatek/compile] Error 2
